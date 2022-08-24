@@ -1,8 +1,28 @@
 {
-    "tasks": [
-      { "id": 1, "text": "football match", "day": "23/11/2022", "reminde": true },
-      { "id": 2, "text": "Volleyball match", "day": "17/1/2021", "reminde": true },
-      { "id": 3, "text": "breakfast", "day": "14/2/2021", "reminde": false },
-      { "id": 4, "text": "dinner", "day": "15/6/16", "reminde": false }    
-    ]
-  }
+  "tasks": [
+    {
+      "id": 1,
+      "text": "swimming",
+      "day": "17/1/2021",
+      "reminde": true
+    },
+    {
+      "id": 2,
+      "text": "Volleyball match",
+      "day": "17/1/2021",
+      "reminde": true
+    },
+    {
+      "id": 3,
+      "text": "breakfast",
+      "day": "14/2/2021",
+      "reminde": false
+    },
+    {
+      "id": 4,
+      "text": "dinner",
+      "day": "15/6/16",
+      "reminde": false
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { Task } from  "../../Task"
 
@@ -10,10 +10,16 @@ import { Task } from  "../../Task"
 export class TaskItemComponent implements OnInit {
   @Input() task: Task;
   fatimes = faTrash;
+  @Output() iconClicked = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  iconClick()
+  {
+    this.iconClicked.emit();
   }
 
 }
