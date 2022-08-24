@@ -1,8 +1,26 @@
 .task-item 
 {
-    background-color: lightseagreen;
-    padding: 10px;
-    margin-top: 2px;
-    color: white;
-    font-size: 18px;
+    padding: 5px;
+    margin-top: 4px;
+    color: black;
+    font-size: 17px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+.task-item .flexible 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.task-item .flexible .info
+{
+    flex: 70%;
+}
+.task-item .flexible  fa-icon 
+{
+    color: red;
+    flex: 30%;
+    font-size: 30px;
+    cursor: pointer;
 }
