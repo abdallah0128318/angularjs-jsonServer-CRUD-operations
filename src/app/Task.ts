@@ -1,7 +1,7 @@
 export interface Task 
 {
     id?: number,
-    activity: string,
+    text: string,
     day: string,
     reminder: boolean
 }
