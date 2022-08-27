@@ -1,0 +1,55 @@
+.add-task 
+{
+    padding:20px 10px;
+    background-color: rgb(247, 156, 123);
+    color: white;
+    margin: 10px;
+    border-radius: 15px;
+}
+.add-task .form-group, .check-group
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    align-items: center;
+}
+.add-task .form-group label
+{
+    flex: 25%;
+    max-width: 25%;
+    font-size: 20px;
+}
+.add-task .form-group input
+{
+    flex: 75%;
+    max-width: 75%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+}
+.add-task .check-group #reminderInput
+{
+    width: 20px;
+    height: 20px;
+}
+.add-task .check-group #reminderLabel
+{
+    flex: 99%;
+    font-size: 30px;
+    text-align: center;
+}
+.add-task #add-task-btn 
+{
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(231, 44, 44);
+    color: white;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
