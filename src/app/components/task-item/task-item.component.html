@@ -1,4 +1,4 @@
-<div class="task-item">
+<div class="task-item" (dblclick)="onDblClick()" [ngClass]="{reminder: task.reminder}">
     <div class="flexible">
         <div class="info">
             <h3>{{task.text}}</h3>

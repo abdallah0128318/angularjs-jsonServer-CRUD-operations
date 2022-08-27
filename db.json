@@ -4,25 +4,25 @@
       "id": 1,
       "text": "swimming",
       "day": "17/1/2021",
-      "reminde": true
+      "reminder": false
     },
     {
       "id": 2,
-      "text": "Volleyball match",
+      "text": "Volleyball",
       "day": "17/1/2021",
-      "reminde": true
+      "reminder": false
     },
     {
       "id": 3,
       "text": "breakfast",
       "day": "14/2/2021",
-      "reminde": false
+      "reminder": false
     },
     {
       "id": 4,
       "text": "dinner",
       "day": "15/6/16",
-      "reminde": false
+      "reminder": false
     }
   ]
 }

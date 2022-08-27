@@ -11,6 +11,7 @@ export class TaskItemComponent implements OnInit {
   @Input() task: Task;
   fatimes = faTrash;
   @Output() iconClicked = new EventEmitter();
+  @Output() taskClicked = new EventEmitter();
 
   constructor() { }
 
@@ -20,6 +21,11 @@ export class TaskItemComponent implements OnInit {
   iconClick()
   {
     this.iconClicked.emit();
+  }
+
+  onDblClick()
+  {
+    this.taskClicked.emit();
   }
 
 }
