@@ -1,4 +1,15 @@
 <header id="head">
     <h2> {{title}} </h2>
-    <app-button text="Add" bg_color="darkslateblue" color="#ffffff"></app-button>
+
+    <!-- 
+        toggleFormAndBtn method is used to toggle form display and 
+        toggle button text as we need through something that is called 
+        subject. Subject is something used when an event causes updates 
+        at more than one copponent
+    -->
+
+    <app-button 
+    text="{{ addBtnClicked? 'Close' : 'Add'}}" 
+    bg_color="{{addBtnClicked? 'red' : 'darkslateblue'}}"
+    color="#ffffff" (btnClick)="toggleFormAndBtn()"></app-button>
 </header>

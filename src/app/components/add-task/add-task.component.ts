@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UiServiceService } from 'src/app/services/ui-service.service';
 
 @Component({
   selector: 'app-add-task',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddTaskComponent implements OnInit {
 
-  constructor() { }
+  showForm: boolean = false;
+
+  constructor(private uiService: UiServiceService ) { 
+    this.uiService.subjectAsObservable().subscribe(value => this.showForm = value);
+  }
+  
 
   ngOnInit(): void {
   }

@@ -18,7 +18,7 @@ import { ButtonComponent } from './components/button/button.component';
     TasksComponent,
     TaskItemComponent,
     AddTaskComponent,
-    ButtonComponent
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,
