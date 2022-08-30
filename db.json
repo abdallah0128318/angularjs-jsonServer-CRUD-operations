@@ -1,19 +1,19 @@
 {
   "tasks": [
     {
-      "id": 2,
+      "id": 1,
       "text": "Volleyball",
       "day": "17/1/2021",
-      "reminder": false
+      "reminder": true
     },
     {
-      "id": 3,
+      "id": 2,
       "text": "breakfast",
       "day": "14/2/2021",
       "reminder": false
     },
     {
-      "id": 4,
+      "id": 3,
       "text": "dinner",
       "day": "15/6/16",
       "reminder": false

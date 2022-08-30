@@ -34,4 +34,9 @@ export class TaskService {
   {
     return this.http.put<Task>(`${this.base_url}/${task.id}`, task, headersOptions);
   }
+
+  addNewTask(task: Task): Observable<Task>
+  {
+    return this.http.post<Task>(this.base_url, task, headersOptions);
+  }
 }

@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(private uiService: UiServiceService) { 
     this.uiService.subjectAsObservable()
-    .subscribe(value => {this.addBtnClicked = value; console.log(this.addBtnClicked)});
+    .subscribe(value => {this.addBtnClicked = value});
   }
 
   ngOnInit(): void {
