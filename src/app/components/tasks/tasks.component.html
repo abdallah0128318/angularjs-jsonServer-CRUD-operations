@@ -1,4 +1,5 @@
 <app-add-task (addTask)="addNewTask($event)"></app-add-task>
+<p><a routerLink="/about">About Page</a></p>
 <app-task-item 
     *ngFor="let task of tasks" 
     [task]="task" 

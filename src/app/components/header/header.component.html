@@ -11,5 +11,7 @@
     <app-button 
     text="{{ addBtnClicked? 'Close' : 'Add'}}" 
     bg_color="{{addBtnClicked? 'red' : 'black'}}"
-    color="#ffffff" (btnClick)="toggleFormAndBtn()"></app-button>
+    color="#ffffff" (btnClick)="toggleFormAndBtn()"
+    *ngIf="hasRouter('/')">
+</app-button>
 </header>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { UiServiceService } from 'src/app/services/ui-service.service';
 
 @Component({
@@ -12,7 +13,7 @@ export class HeaderComponent implements OnInit {
   // A flag property to the Add button and it and it is false if the 'Add' button is displayed
   addBtnClicked: boolean = false;
 
-  constructor(private uiService: UiServiceService) { 
+  constructor(private uiService: UiServiceService, private router: Router) { 
     this.uiService.subjectAsObservable()
     .subscribe(value => {this.addBtnClicked = value});
   }
@@ -23,6 +24,11 @@ export class HeaderComponent implements OnInit {
   toggleFormAndBtn()
   {
     this.uiService.prepareSubject();
+  }
+
+  hasRouter(route: string): boolean
+  {
+    return this.router.url === route;
   }
 
 }
